@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ME API Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 My Profile API Playground</h1>
+            <p>Load, search, and filter your personal profile data</p>
+        </header>
+
+        <div class="button-group">
+            <button id="loadProfileBtn" class="btn btn-primary">Load Profile</button>
+            <button id="createProfileBtn" class="btn btn-secondary">Create Sample Profile</button>
+            <button id="deleteProfileBtn" class="btn btn-danger">Delete Profile</button>
+        </div>
+
+        <div class="filter-section">
+            <label for="skillSearch">Search in Profile:</label>
+            <input type="text" id="skillSearch" class="search-input" placeholder="Search skills, projects, name...">
+            <button id="searchBtn" class="btn btn-small btn-primary">Search</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            ⏳ Loading...
+        </div>
+
+        <div id="error" class="error-message" style="display: none;"></div>
+
+        <section id="profileSection" class="profile-section" style="display: none;">
+            <h2>👤 Profile Information</h2>
+            <div class="profile-card">
+                <div class="profile-header">
+                    <h3 id="profileName"></h3>
+                    <p id="profileEmail"></p>
+                    <div class="profile-links">
+                        <a id="githubLink" href="#" target="_blank" class="link-btn">🔗 GitHub</a>
+                        <a id="linkedinLink" href="#" target="_blank" class="link-btn">🔗 LinkedIn</a>
+                        <a id="portfolioLink" href="#" target="_blank" class="link-btn">🔗 Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="educationSection" class="education-section" style="display: none;">
+            <h2>🎓 Education</h2>
+            <div id="educationList" class="list-container"></div>
+        </section>
+
+        <section id="skillsSection" class="skills-section" style="display: none;">
+            <h2>💡 Skills</h2>
+            <div id="skillsList" class="skills-container"></div>
+        </section>
+
+        <section id="projectsSection" class="projects-section" style="display: none;">
+            <h2>🚀 Projects</h2>
+            <div id="projectsList" class="projects-container"></div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
