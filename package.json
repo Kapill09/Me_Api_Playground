@@ -1,0 +1,7 @@
+{
+  "name": "me-api-playground-root",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm start"
+  }
+}
