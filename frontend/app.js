@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://meapiplayground-production.up.railway.app";
 
 const loadProfileBtn = document.getElementById("loadProfileBtn");
 const createProfileBtn = document.getElementById("createProfileBtn");
